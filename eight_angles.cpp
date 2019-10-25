@@ -9,7 +9,7 @@ eight_angles::eight_angles(std::istream &is){
 point eight_angles::center() const {
     point p;
     p=one+two+three+four+five+six+seven+eight;
-    p=p/8;
+    p/=8;
     return p;
 }
 

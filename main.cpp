@@ -27,12 +27,18 @@ int main() {
             break;
         }
         if(strcmp(a1,"print")==0){
-            new_figure->print(std::cout);
+            for (size_t i = 0; i < figures.size(); ++i) {
+                figures[i]->print(std::cout);
+            }
         }else if(strcmp(a1,"center")==0){
-            point p=new_figure->center();
-            std::cout << p << "\n";
+            for (size_t i = 0; i < figures.size(); ++i) {
+                point p=figures[i]->center();
+                std::cout << p << "\n";
+            }
         }else if(strcmp(a1,"square")==0){
-            std::cout << new_figure->square() << "\n";
+            for (size_t i = 0; i < figures.size(); ++i) {
+                std::cout << figures[i]->square() << "\n";
+            }
         }else if(strcmp(a1,"destroy")==0){
             int id;
             std::cin >> id;

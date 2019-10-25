@@ -9,7 +9,7 @@ five_angles::five_angles(std::istream &is){
 point five_angles::center() const {
     point p;
     p=one+two+three+four+five;
-    p=p/5;
+    p/=5;
     return p;
 }
 

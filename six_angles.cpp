@@ -9,7 +9,7 @@ six_angles::six_angles(std::istream &is){
 point six_angles::center() const {
     point p;
     p=one+two+three+four+five+six;
-    p=p/6;
+    p/=6;
     return p;
 }
 
